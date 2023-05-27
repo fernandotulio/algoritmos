@@ -6,7 +6,7 @@ def busca_binaria(lista, item):
     while baixo <= alto:
         meio = int((baixo + alto) / 2)
         chute = lista[meio]
-        
+        print("Chute ", chute)
         if chute ==  item:
             return meio
         if chute > item:
@@ -15,6 +15,6 @@ def busca_binaria(lista, item):
             baixo = meio + 1 
     return None
     
-minha_lista = [1, 2, 3, 4, 6, 8, 12, 14 ,23, 50, 100]
+minha_lista = [1, 2, 3, 4, 5, 6]
 
-print(busca_binaria(minha_lista, 100))
+print(busca_binaria(minha_lista, 6))
